@@ -39,7 +39,6 @@ h6 {
   align-items: center;
   grid-template-columns: 104px auto 72px 56px;
   padding: 35px;
-  padding-bottom: 0;
   color: #252b42;
   box-sizing: border-box;
 }
@@ -51,7 +50,8 @@ h6 {
     width: 100%;
     max-width: 1322px;
     margin-left: 196px;
-    padding: 35px 0;
+    padding: 0;
+    padding-top: 35px;
     padding-right: 256px;
   }
 }
@@ -163,6 +163,11 @@ h6 {
   background: url(../images/cover.png) no-repeat center;
   background-size: cover;
   text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .main-block {
+    padding-bottom: 21px;
+  }
 }
 @media screen and (min-width: 1000px) {
   .main-block {
@@ -282,5 +287,103 @@ h6 {
 @media screen and (min-width: 1000px) {
   .main-block .agent {
     width: 509px;
+  }
+}
+
+/*----------------PRACTICE AREAS-----------------------------*/
+.practice-areas {
+  width: 330px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 145px 43px;
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 570px) {
+  .practice-areas {
+    width: 430px;
+    padding: 145px 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .practice-areas {
+    width: 1050px;
+    margin: 0 auto;
+  }
+}
+.practice-areas h2 {
+  margin-bottom: 10px;
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+@media screen and (min-width: 1000px) {
+  .practice-areas h2 {
+    width: 374px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.practice-areas p {
+  margin-bottom: 75px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+@media screen and (min-width: 1000px) {
+  .practice-areas p {
+    width: 431px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .practice-areas__categories {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.practice-areas__categories li {
+  border-radius: 5px;
+  background: #f9f9f9;
+  padding: 30px 40px;
+  box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+  color: #252b42;
+}
+@media screen and (min-width: 1000px) {
+  .practice-areas__categories li {
+    width: 329px;
+  }
+}
+.practice-areas__categories li img {
+  margin-bottom: 10px;
+}
+.practice-areas__categories li h5 {
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+.practice-areas__categories li:nth-child(2) {
+  background: #295c7a;
+  color: #ffffff;
+}
+.practice-areas__categories li:not(last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .practice-areas__categories li:not(last-child) {
+    margin-bottom: 0;
+    margin-right: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
