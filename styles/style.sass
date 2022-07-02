@@ -2,6 +2,8 @@
 @import "media"
 @import "fonts"
 
+$breakpoint: 767
+
 *, *::after, *::before
   box-sizing: border-box
   margin: 0
@@ -11,10 +13,124 @@ ul
   list-style: none
   margin: 0
 
+a
+  text-decoration: none
+  color: $text-color
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
+h6
   margin: 0
+
+.closed
+  display: none
+  @include media-min($breakpoint)
+      display: block
+
+.page-header
+  display: grid
+  align-items: center
+  grid-template-columns: 104px auto 72px 56px
+  padding: 35px
+  color: $text-color
+  box-sizing: border-box
+
+  @include media-min($breakpoint)
+    grid-template-columns: 104px minmax(20px, auto) 279px 96px minmax(20px, 164px)
+    position: absolute
+    z-index: 11
+    width: 100%
+    max-width: 1322px
+    margin: 0 60px
+    padding: 35px 100px
+    
+  h3
+    font-family: 'Martel'
+    font-style: normal
+    font-weight: 700
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.1px
+
+  &__menu-btn
+    justify-self: end
+    grid-column: 4/5
+    font: 0/0 serif
+    width: 23px
+    height: 14px
+    display: block
+    background: url(../images/icons/menu.svg)
+
+    @include media-min($breakpoint)
+      grid-column: 5/6
+ 
+  .icons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    grid-column: 3/4
+
+    @include media-min($breakpoint)
+      grid-column: 4/5
+      justify-content: flex-end
+    
+    .cart
+      width: 23px
+      height: 23px
+      background: url(../images/icons/cart.svg)
+    
+    .search
+      width: 24px
+      height: 24px
+      background: url(../images/icons/search.svg)
+      
+      @include media-min($breakpoint)
+        margin-right: 22px
+    
+    &__item
+      display: block
+      font: 0/0 serif
+
+  .nav
+    grid-column: 1/-1
+    margin-top: 80px
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    font-size: 30px
+    line-height: 45px
+    text-align: center
+    letter-spacing: 0.2px
+    color: $second-text-color
+    z-index: 10
+
+    @include media-min($breakpoint)
+      grid-column: 3/4
+      grid-row: 1/2
+      margin-top: 0
+      font-weight: 600
+      font-size: 14px
+      line-height: 24px
+
+    &__item
+      display: block
+      text-align: center
+
+      @include media-min($breakpoint)
+        display: inline
+
+      &:not(:last-child)
+        margin-bottom: 30px
+    
+        @include media-min($breakpoint)
+          margin-bottom: 0
+          margin-right: 22px
+
+main
+  width: 1500px
+  height: 1000px
+  background: url(../images/cover.png) no-repeat 0 0
+  background-size: cover

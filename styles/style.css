@@ -1,61 +1,155 @@
-@font-face {
-  font-family: Martel;
-  src: url(../fonts/Martel-Black.ttf) format("ttf");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Martel;
-  src: url(../fonts/Martel-Bold.ttf) format("ttf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Bold.ttf) format("ttf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Medium.ttf) format("ttf");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf) format("ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-Bold.ttf) format("ttf");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-Regular.ttf) format("ttf");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: OpenSans;
-  src: url(../fonts/OpenSans-SemiBold.ttf) format("ttf");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
+@import url("https://fonts.googleapis.com/css2?family=Martel:wght@700;900&family=Montserrat:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap");
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #252b42;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.closed {
+  display: none;
+}
+@media screen and (min-width: 767px) {
+  .closed {
+    display: block;
+  }
+}
+
+.page-header {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 104px auto 72px 56px;
+  padding: 35px;
+  color: #252b42;
+  box-sizing: border-box;
+}
+@media screen and (min-width: 767px) {
+  .page-header {
+    grid-template-columns: 104px minmax(20px, auto) 279px 96px minmax(20px, 164px);
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    max-width: 1322px;
+    margin: 0 60px;
+    padding: 35px 100px;
+  }
+}
+.page-header h3 {
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+}
+.page-header__menu-btn {
+  justify-self: end;
+  grid-column: 4/5;
+  font: 0/0 serif;
+  width: 23px;
+  height: 14px;
+  display: block;
+  background: url(../images/icons/menu.svg);
+}
+@media screen and (min-width: 767px) {
+  .page-header__menu-btn {
+    grid-column: 5/6;
+  }
+}
+.page-header .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 3/4;
+}
+@media screen and (min-width: 767px) {
+  .page-header .icons {
+    grid-column: 4/5;
+    justify-content: flex-end;
+  }
+}
+.page-header .icons .cart {
+  width: 23px;
+  height: 23px;
+  background: url(../images/icons/cart.svg);
+}
+.page-header .icons .search {
+  width: 24px;
+  height: 24px;
+  background: url(../images/icons/search.svg);
+}
+@media screen and (min-width: 767px) {
+  .page-header .icons .search {
+    margin-right: 22px;
+  }
+}
+.page-header .icons__item {
+  display: block;
+  font: 0/0 serif;
+}
+.page-header .nav {
+  grid-column: 1/-1;
+  margin-top: 80px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #737373;
+  z-index: 10;
+}
+@media screen and (min-width: 767px) {
+  .page-header .nav {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+.page-header .nav__item {
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 767px) {
+  .page-header .nav__item {
+    display: inline;
+  }
+}
+.page-header .nav__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 767px) {
+  .page-header .nav__item:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 22px;
+  }
+}
+
+main {
+  width: 1500px;
+  height: 1000px;
+  background: url(../images/cover.png) no-repeat 0 0;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
