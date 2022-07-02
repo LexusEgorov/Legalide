@@ -355,7 +355,8 @@ p
 
       &:nth-child(2)
         background: $secondary-color-4
-        color: $light-text-color
+        h5
+          color: $light-text-color
 
       &:not(last-child)
         margin-bottom: 30px
@@ -509,6 +510,7 @@ p
   padding: 132px
   padding-bottom: 87px
   margin: 0 auto
+  margin-bottom: 200px
   position: relative
 
   @include media-min($breakpoint)
@@ -578,7 +580,7 @@ p
 .decorative-block
   @include media-min($breakpoint)
     position: absolute
-    left: -50%
+    left: -500%
     top: 100%
     transform: translateY(77px)
     width: 1000%
@@ -646,3 +648,65 @@ p
       
       @include media-min($breakpoint)
         transform: translateX(-50px)  
+
+/*-----------------------CONTACTS-------------------------------------*/
+
+.contacts
+  width: 100%
+  padding: 42px
+  text-align: center
+  background: #f3f3f3
+  
+  p
+    padding: 0 23px
+  
+  @include media-min($breakpoint)
+    padding-bottom: 155px
+
+.contacts-list
+  @include media-min($breakpoint)
+    display: flex
+    align-items: baseline
+
+  li
+    width: 100%
+    padding: 50px 60px
+    background: #ffffff
+
+    img
+      margin-bottom: 15px
+
+    h6
+      color: $text-color
+    
+    h5
+      color: $text-color
+      margin: 15px 0
+
+    button
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 700
+      font-size: 14px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: $primary-color
+      border: 1px solid $primary-color
+      border-radius: 5px
+      padding: 10px 20px
+
+    &:nth-child(2)
+      background: $dark-background-color
+      padding: 80px 60px
+      
+      h5
+        color: $light-text-color
+      
+      h6
+        color: $light-text-color
+    
+    &:not(:last-child)
+      margin-bottom: 30px
+      @include media-min($breakpoint)
+        margin: 0
+      

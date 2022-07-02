@@ -407,6 +407,8 @@ p {
 }
 .practice-areas__categories li:nth-child(2) {
   background: #295c7a;
+}
+.practice-areas__categories li:nth-child(2) h5 {
   color: #ffffff;
 }
 .practice-areas__categories li:not(last-child) {
@@ -580,6 +582,7 @@ p {
   padding: 132px;
   padding-bottom: 87px;
   margin: 0 auto;
+  margin-bottom: 200px;
   position: relative;
 }
 @media screen and (min-width: 1000px) {
@@ -673,7 +676,7 @@ p {
 @media screen and (min-width: 1000px) {
   .decorative-block {
     position: absolute;
-    left: -50%;
+    left: -500%;
     top: 100%;
     transform: translateY(77px);
     width: 1000%;
@@ -749,5 +752,73 @@ p {
 @media screen and (min-width: 1000px) {
   .sub-form form button {
     transform: translateX(-50px);
+  }
+}
+
+/*-----------------------CONTACTS-------------------------------------*/
+.contacts {
+  width: 100%;
+  padding: 42px;
+  text-align: center;
+  background: #f3f3f3;
+}
+.contacts p {
+  padding: 0 23px;
+}
+@media screen and (min-width: 1000px) {
+  .contacts {
+    padding-bottom: 155px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contacts-list {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.contacts-list li {
+  width: 100%;
+  padding: 50px 60px;
+  background: #ffffff;
+}
+.contacts-list li img {
+  margin-bottom: 15px;
+}
+.contacts-list li h6 {
+  color: #252b42;
+}
+.contacts-list li h5 {
+  color: #252b42;
+  margin: 15px 0;
+}
+.contacts-list li button {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #d0a144;
+  border: 1px solid #d0a144;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+.contacts-list li:nth-child(2) {
+  background: #252b42;
+  padding: 80px 60px;
+}
+.contacts-list li:nth-child(2) h5 {
+  color: #ffffff;
+}
+.contacts-list li:nth-child(2) h6 {
+  color: #ffffff;
+}
+.contacts-list li:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .contacts-list li:not(:last-child) {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
