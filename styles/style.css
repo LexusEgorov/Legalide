@@ -821,4 +821,51 @@ p {
   .contacts-list li:not(:last-child) {
     margin: 0;
   }
+}
+
+/*-----------------------FREE CONSULTATION--------------------------------------------*/
+.free-consultation {
+  padding: 40px 90px;
+  text-align: left;
+}
+@media screen and (min-width: 1000px) {
+  .free-consultation {
+    width: min(100%, 1050px);
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.free-consultation h3 {
+  padding-right: 49px;
+  margin-bottom: 10px;
+}
+.free-consultation p {
+  padding-right: 66px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .free-consultation p {
+    margin: 0;
+  }
+}
+.free-consultation button {
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: #784f33;
+  padding: 15px 40px;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+@media screen and (min-width: 1000px) {
+  .free-consultation button {
+    margin-right: 146px;
+  }
 }/*# sourceMappingURL=style.css.map */
