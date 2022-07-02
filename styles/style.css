@@ -803,6 +803,7 @@ p {
   border: 1px solid #d0a144;
   border-radius: 5px;
   padding: 10px 20px;
+  background: none;
 }
 .contacts-list li:nth-child(2) {
   background: #252b42;
@@ -868,4 +869,105 @@ p {
   .free-consultation button {
     margin-right: 146px;
   }
+}
+
+/*------------------FOOTER-------------------------------------*/
+.footer-wrapper {
+  text-align: left;
+  padding: 50px 88px;
+  padding-right: 0;
+  color: #ffffff;
+  background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+}
+@media screen and (min-width: 1000px) {
+  .footer-wrapper {
+    width: min(100%, 1050px);
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer-wrapper .container:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .footer-wrapper dl {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.footer-wrapper dt {
+  margin-bottom: 20px;
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+.footer-wrapper dd:not(:last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .footer-wrapper dd:not(:last-child) {
+    margin: 0;
+  }
+}
+.footer-wrapper li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-wrapper li a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+}
+
+.footer-contacts li {
+  display: flex;
+}
+.footer-contacts li img {
+  margin-right: 10px;
+}
+.footer-contacts li h6 {
+  color: #ffffff;
+}
+
+.socials {
+  padding: 25px 89px;
+  text-align: left;
+}
+@media screen and (min-width: 1000px) {
+  .socials {
+    width: min(100%, 1050px);
+    margin: 0 auto;
+    padding: 25px 0;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .socials .text-container {
+    display: flex;
+  }
+  .socials .text-container h6:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.socials ul {
+  margin-top: 50px;
+  display: flex;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1000px) {
+  .socials ul {
+    margin: 0;
+  }
+}
+.socials ul li:not(:last-child) {
+  margin-right: 20px;
 }/*# sourceMappingURL=style.css.map */

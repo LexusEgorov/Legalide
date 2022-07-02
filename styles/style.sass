@@ -694,6 +694,7 @@ p
       border: 1px solid $primary-color
       border-radius: 5px
       padding: 10px 20px
+      background: none
 
     &:nth-child(2)
       background: $dark-background-color
@@ -750,3 +751,96 @@ p
 
     @include media-min($breakpoint)
       margin-right: 146px
+
+/*------------------FOOTER-------------------------------------*/
+
+.footer-wrapper
+  text-align: left
+  padding: 50px 88px
+  padding-right: 0
+  color: $light-text-color
+  background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%)
+
+  @include media-min($breakpoint)
+    width: min(100%, 1050px)
+    margin: 0 auto
+
+  .container
+    @include media-min($breakpoint)
+      &:not(:last-child)
+        margin-right: 30px
+
+  dl
+    @include media-min($breakpoint)
+      display: flex
+      justify-content: flex-start
+
+  dt
+    margin-bottom: 20px
+    font-family: 'Martel'
+    font-style: normal
+    font-weight: 700
+    font-size: 16px
+    line-height: 24px
+    letter-spacing: 0.1px
+  
+  dd
+    &:not(:last-child)
+      margin-bottom: 30px
+      @include media-min($breakpoint)
+        margin: 0
+
+  li
+    &:not(:last-child)
+      margin-bottom: 10px
+    
+    a
+      font-family: 'Open Sans'
+      font-style: normal
+      font-weight: 600
+      font-size: 14px
+      line-height: 24px
+      letter-spacing: 0.2px
+      color: $light-text-color
+
+.footer-contacts
+  li
+    display: flex
+    
+    img
+      margin-right: 10px
+
+    h6
+      color: $light-text-color
+
+.socials
+  padding: 25px 89px
+  text-align: left
+
+  @include media-min($breakpoint)
+    width: min(100%, 1050px)
+    margin: 0 auto
+    padding: 25px 0
+    padding-right: 40px
+    display: flex
+    justify-content: space-between
+
+  .text-container
+    @include media-min($breakpoint)
+      display: flex
+
+      h6
+        &:not(:last-child)
+          margin-right: 20px
+  
+  ul
+    margin-top: 50px
+    display: flex
+    justify-content: flex-start
+
+    @include media-min($breakpoint)
+      margin: 0
+
+    li
+      &:not(:last-child)
+        margin-right: 20px
