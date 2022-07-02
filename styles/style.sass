@@ -25,11 +25,13 @@ h5,
 h6
   margin: 0
 
+body
+  overflow-x: hidden
+
 .closed
   display: none
   @include media-min($breakpoint)
       display: block
-
 /*--------------------TEXT----------------------------------*/
 h2
   margin-bottom: 10px
@@ -45,6 +47,15 @@ h2
     width: 374px
     margin: 0 auto
     margin-bottom: 10px
+
+h3
+  font-family: 'Martel'
+  font-style: normal
+  font-weight: 700
+  font-size: 24px
+  line-height: 32px
+  letter-spacing: 0.1px
+  color: $text-color      
 
 h5 
   font-family: 'Martel'
@@ -79,6 +90,7 @@ p
     padding: 0
     margin: 0 auto
     margin-bottom: 80px
+
 /*-----------------HEADER-------------------------------*/
 .page-header
   display: grid
@@ -490,5 +502,147 @@ p
       
         &:not(:last-child)
           margin-bottom: 30px
-        
+
+/*-----------------------PARTNERS------------------------------*/
+.partners
+  width: 100%
+  padding: 132px
+  padding-bottom: 87px
+  margin: 0 auto
+  position: relative
+
+  @include media-min($breakpoint)
+    width: min(100%, 1050px)
+    padding: 0
+    padding-top: 50px
+
+  ul
+    display: flex
+    flex-direction: column
+    align-items: center
     
+    @include media-min($breakpoint)
+      flex-direction: row
+      justify-content: space-between
+      padding: 50px 0
+
+    li
+      &:not(:last-child)
+        margin-bottom: 60px
+
+        @include media-min($breakpoint)
+          margin: 0   
+
+    .hooli
+      width: 149px
+      height: 50px
+      @include media-min($breakpoint)
+        width: 103px
+        height: 34px
+
+    .hat
+      width: 149px
+      height: 109px
+      @include media-min($breakpoint)
+        width: 102px
+        height: 75px
+
+    .lya
+      width: 146px
+      height: 99px
+      @include media-min($breakpoint)
+        width: 83px
+        height: 59px
+
+    .robot
+      width: 149px
+      height: 142px
+      @include media-min($breakpoint)
+        width: 76px
+        height: 72px
+
+    .aws
+      width: 152px
+      height: 91px
+      @include media-min($breakpoint)
+        width: 104px
+        height: 62px
+
+    .stripe     
+      width: 149px
+      height: 60px
+      @include media-min($breakpoint)
+        width: 103px
+        height: 42px
+  
+.decorative-block
+  @include media-min($breakpoint)
+    position: absolute
+    left: -50%
+    top: 100%
+    transform: translateY(77px)
+    width: 1000%
+    height: 77px
+    background: $dark-background-color
+
+        
+.sub-form
+  position: absolute
+  left: 0
+  top: 100%
+  background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%)
+  padding: 30px 40px
+  z-index: 1
+
+  @include media-min($breakpoint)
+    width: 100%
+    padding: 33px 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  h3
+    text-align: center
+    color: $light-text-color
+    margin-bottom: 30px
+    
+    @include media-min($breakpoint)
+      float: left
+      text-align: left
+      width: 253px
+      margin: 0  
+
+  form
+    width: 337px
+    font-family: 'Montserrat'
+    font-weight: 400
+    font-size: 14px
+    line-height: 28px
+    letter-spacing: 0.2px
+    color: $second-text-color
+    
+    @include media-min($breakpoint)
+        width: 450px
+        float: right
+    
+    input
+      position: relative
+      width: 100%
+      border-radius: 5px
+      border: none
+      padding: 15px 20px
+
+    button
+      cursor: pointer
+      position: absolute
+      right: 0
+      transform: translateX(-30px)
+      border: none
+      border-top-right-radius: 5px
+      border-bottom-right-radius: 5px
+      background: $primary-color
+      color: $light-text-color
+      padding: 15px 22.5px
+      
+      @include media-min($breakpoint)
+        transform: translateX(-50px)  

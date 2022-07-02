@@ -24,6 +24,10 @@ h6 {
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .closed {
   display: none;
 }
@@ -50,6 +54,16 @@ h2 {
     margin: 0 auto;
     margin-bottom: 10px;
   }
+}
+
+h3 {
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
 }
 
 h5 {
@@ -558,4 +572,182 @@ p {
 }
 .about-us .text-column__plans li:not(:last-child) {
   margin-bottom: 30px;
+}
+
+/*-----------------------PARTNERS------------------------------*/
+.partners {
+  width: 100%;
+  padding: 132px;
+  padding-bottom: 87px;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (min-width: 1000px) {
+  .partners {
+    width: min(100%, 1050px);
+    padding: 0;
+    padding-top: 50px;
+  }
+}
+.partners ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 0;
+  }
+}
+.partners ul li:not(:last-child) {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul li:not(:last-child) {
+    margin: 0;
+  }
+}
+.partners ul .hooli {
+  width: 149px;
+  height: 50px;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul .hooli {
+    width: 103px;
+    height: 34px;
+  }
+}
+.partners ul .hat {
+  width: 149px;
+  height: 109px;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul .hat {
+    width: 102px;
+    height: 75px;
+  }
+}
+.partners ul .lya {
+  width: 146px;
+  height: 99px;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul .lya {
+    width: 83px;
+    height: 59px;
+  }
+}
+.partners ul .robot {
+  width: 149px;
+  height: 142px;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul .robot {
+    width: 76px;
+    height: 72px;
+  }
+}
+.partners ul .aws {
+  width: 152px;
+  height: 91px;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul .aws {
+    width: 104px;
+    height: 62px;
+  }
+}
+.partners ul .stripe {
+  width: 149px;
+  height: 60px;
+}
+@media screen and (min-width: 1000px) {
+  .partners ul .stripe {
+    width: 103px;
+    height: 42px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .decorative-block {
+    position: absolute;
+    left: -50%;
+    top: 100%;
+    transform: translateY(77px);
+    width: 1000%;
+    height: 77px;
+    background: #252b42;
+  }
+}
+
+.sub-form {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: linear-gradient(270deg, #295C7A -1.04%, #0072B5 100%);
+  padding: 30px 40px;
+  z-index: 1;
+}
+@media screen and (min-width: 1000px) {
+  .sub-form {
+    width: 100%;
+    padding: 33px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.sub-form h3 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .sub-form h3 {
+    float: left;
+    text-align: left;
+    width: 253px;
+    margin: 0;
+  }
+}
+.sub-form form {
+  width: 337px;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+@media screen and (min-width: 1000px) {
+  .sub-form form {
+    width: 450px;
+    float: right;
+  }
+}
+.sub-form form input {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  padding: 15px 20px;
+}
+.sub-form form button {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  transform: translateX(-30px);
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background: #d0a144;
+  color: #ffffff;
+  padding: 15px 22.5px;
+}
+@media screen and (min-width: 1000px) {
+  .sub-form form button {
+    transform: translateX(-50px);
+  }
 }/*# sourceMappingURL=style.css.map */
