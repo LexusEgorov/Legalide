@@ -256,7 +256,7 @@ h6
 
 /*----------------PRACTICE AREAS-----------------------------*/
 
-.practice-areas
+.practice
   width: 330px
   text-align: center
   margin: 0 auto
@@ -302,6 +302,7 @@ h6
       margin: 0 auto
       margin-bottom: 80px
 
+.practice-areas
   &__categories
     @include media-min($breakpoint)
       display: flex
@@ -337,3 +338,45 @@ h6
         @include media-min($breakpoint)
           margin-bottom: 0
           margin-right: 30px
+
+/*----------------------PRACTICE ADVICE-------------------------------*/
+.practice-advice
+  background: #f3f3f3
+
+  @include media-min($breakpoint)
+    p
+      margin-bottom: 45px
+  
+  &__categories
+    @include media-min($breakpoint)
+      display: flex
+      justify-content: space-between
+
+    .text-wrapper
+      padding: 30px
+      text-align: left
+
+    h5
+      margin-bottom: 15px
+      font-family: 'Martel'
+      font-style: normal
+      font-weight: 700
+      font-size: 16px
+      line-height: 24px
+      letter-spacing: 0.1px
+
+    p
+      margin: 0
+      width: 100%
+
+    li
+      width: 230px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      background: #ffffff
+
+      &:not(last-child)
+        margin-bottom: 30px
+      @include media-min($breakpoint)
+        margin: 0

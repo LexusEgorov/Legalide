@@ -291,7 +291,7 @@ h6 {
 }
 
 /*----------------PRACTICE AREAS-----------------------------*/
-.practice-areas {
+.practice {
   width: 330px;
   text-align: center;
   margin: 0 auto;
@@ -299,18 +299,18 @@ h6 {
   padding-bottom: 100px;
 }
 @media screen and (min-width: 570px) {
-  .practice-areas {
+  .practice {
     width: 430px;
     padding: 145px 0;
   }
 }
 @media screen and (min-width: 1000px) {
-  .practice-areas {
+  .practice {
     width: 1050px;
     margin: 0 auto;
   }
 }
-.practice-areas h2 {
+.practice h2 {
   margin-bottom: 10px;
   font-family: "Martel";
   font-style: normal;
@@ -321,13 +321,13 @@ h6 {
   color: #252b42;
 }
 @media screen and (min-width: 1000px) {
-  .practice-areas h2 {
+  .practice h2 {
     width: 374px;
     margin: 0 auto;
     margin-bottom: 10px;
   }
 }
-.practice-areas p {
+.practice p {
   margin-bottom: 75px;
   font-family: "Open Sans";
   font-style: normal;
@@ -338,13 +338,14 @@ h6 {
   color: #737373;
 }
 @media screen and (min-width: 1000px) {
-  .practice-areas p {
+  .practice p {
     width: 431px;
     padding: 0;
     margin: 0 auto;
     margin-bottom: 80px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .practice-areas__categories {
     display: flex;
@@ -385,5 +386,53 @@ h6 {
   .practice-areas__categories li:not(last-child) {
     margin-bottom: 0;
     margin-right: 30px;
+  }
+}
+
+/*----------------------PRACTICE ADVICE-------------------------------*/
+.practice-advice {
+  background: #f3f3f3;
+}
+@media screen and (min-width: 1000px) {
+  .practice-advice p {
+    margin-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .practice-advice__categories {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.practice-advice__categories .text-wrapper {
+  padding: 30px;
+  text-align: left;
+}
+.practice-advice__categories h5 {
+  margin-bottom: 15px;
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+}
+.practice-advice__categories p {
+  margin: 0;
+  width: 100%;
+}
+.practice-advice__categories li {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #ffffff;
+}
+.practice-advice__categories li:not(last-child) {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1000px) {
+  .practice-advice__categories li {
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
