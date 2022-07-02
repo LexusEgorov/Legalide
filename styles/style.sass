@@ -2,7 +2,7 @@
 @import "media"
 @import "fonts"
 
-$breakpoint: 767
+$breakpoint: 1000
 
 *, *::after, *::before
   box-sizing: border-box
@@ -30,11 +30,13 @@ h6
   @include media-min($breakpoint)
       display: block
 
+/*-----------------HEADER-------------------------------*/
 .page-header
   display: grid
   align-items: center
   grid-template-columns: 104px auto 72px 56px
   padding: 35px
+  padding-bottom: 0
   color: $text-color
   box-sizing: border-box
 
@@ -44,8 +46,13 @@ h6
     z-index: 11
     width: 100%
     max-width: 1322px
-    margin: 0 60px
-    padding: 35px 100px
+    margin-left: 196px
+    padding: 35px 0
+    padding-right: 256px
+
+    @include media-min(1443)
+      margin-left: 50%
+      transform: translateX(-50%)
     
   h3
     font-family: 'Martel'
@@ -129,8 +136,117 @@ h6
           margin-bottom: 0
           margin-right: 22px
 
-main
-  width: 1500px
-  height: 1000px
-  background: url(../images/cover.png) no-repeat 0 0
+/*-------------------MAIN BLOCK--------------------------------*/
+
+.main-block
+  padding-top: 84px 
+  width: 100%
+  background: url(../images/cover.png) no-repeat center
   background-size: cover
+  text-align: center
+  
+  @include media-min($breakpoint)
+    display: grid
+    grid-template-columns: repeat(2, minmax(470px, 509px)) 
+    justify-items: left
+    column-gap: 2px
+    padding-left: 196px
+    padding-right: 196px
+
+  &__information
+    padding: 0 19px
+
+    @include media-min($breakpoint)
+      padding: 0
+      text-align: left
+      align-self: center
+
+
+    h1
+      max-width: 350px 
+      font-family: 'Matrel'
+      font-style: normal
+      font-weight: 700
+      font-size: 40px
+      line-height: 50px
+      letter-spacing: 0.2px
+      color: $text-color
+      margin: 0 auto
+      margin-bottom: 35px
+      padding: 0 26px
+
+      @include media-min($breakpoint)
+        max-width: 100%
+        padding: 0
+        margin: 0
+        margin-bottom: 35px
+        font-weight: 900
+        font-size: 58px
+        line-height: 65px
+
+        br
+          display: none
+
+    h4
+      font-family: 'Montserrat'
+      font-style: normal
+      font-weight: 500
+      font-size: 20px
+      line-height: 30px
+      letter-spacing: 0.2px
+      color: $second-text-color
+      max-width: 376px
+      margin: 0 auto
+      margin-bottom: 35px
+
+      @include media-min($breakpoint)
+        padding: 0
+        margin: 0
+        margin-bottom: 35px
+
+  .information__buttons
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 108px
+
+      @include media-min($breakpoint)
+        flex-direction: row
+        justify-content: flex-start
+        margin: 0
+
+      .get-quote
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 28px
+        letter-spacing: 0.2px
+        color: $light-text-color
+        padding: 10px 36px
+        margin-bottom: 30px
+        border-radius: 37px
+        background: $secondary-color-2  
+
+        @include media-min($breakpoint)
+          margin: 0
+          margin-right: 10px 
+      
+      .learn-more
+        font-family: 'Open Sans'
+        font-style: normal
+        font-weight: 700
+        font-size: 14px
+        line-height: 28px
+        letter-spacing: 0.2px
+        color: $secondary-color-2
+        padding: 10px 36px
+        border-radius: 37px
+        border: 1px solid $secondary-color-2
+        background: none
+  
+  .agent
+    width: 377px
+
+    @include media-min($breakpoint)
+      width: 509px
