@@ -30,6 +30,37 @@ h6
   @include media-min($breakpoint)
       display: block
 
+/*--------------------TEXT----------------------------------*/
+h2
+  margin-bottom: 10px
+  font-family: 'Martel'
+  font-style: normal
+  font-weight: 700
+  font-size: 40px
+  line-height: 50px
+  letter-spacing: 0.2px
+  color: $text-color            
+
+  @include media-min($breakpoint)
+    width: 374px
+    margin: 0 auto
+    margin-bottom: 10px
+
+p 
+  margin-bottom: 75px
+  font-family: 'Open Sans'
+  font-style: normal
+  font-weight: 400
+  font-size: 14px
+  line-height: 20px
+  letter-spacing: 0.2px
+  color: $second-text-color
+
+  @include media-min($breakpoint)
+    width: 431px
+    padding: 0
+    margin: 0 auto
+    margin-bottom: 80px
 /*-----------------HEADER-------------------------------*/
 .page-header
   display: grid
@@ -270,37 +301,6 @@ h6
   @include media-min($breakpoint)
     width: min(1050px, 100%)
     margin: 0 auto
-
-  h2
-    margin-bottom: 10px
-    font-family: 'Martel'
-    font-style: normal
-    font-weight: 700
-    font-size: 40px
-    line-height: 50px
-    letter-spacing: 0.2px
-    color: $text-color            
-
-    @include media-min($breakpoint)
-      width: 374px
-      margin: 0 auto
-      margin-bottom: 10px
-
-  p 
-    margin-bottom: 75px
-    font-family: 'Open Sans'
-    font-style: normal
-    font-weight: 400
-    font-size: 14px
-    line-height: 20px
-    letter-spacing: 0.2px
-    color: $second-text-color
-
-    @include media-min($breakpoint)
-      width: 431px
-      padding: 0
-      margin: 0 auto
-      margin-bottom: 80px
 
 .practice-areas
   &__categories

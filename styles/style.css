@@ -33,6 +33,44 @@ h6 {
   }
 }
 
+/*--------------------TEXT----------------------------------*/
+h2 {
+  margin-bottom: 10px;
+  font-family: "Martel";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: 0.2px;
+  color: #252b42;
+}
+@media screen and (min-width: 1000px) {
+  h2 {
+    width: 374px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+
+p {
+  margin-bottom: 75px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+@media screen and (min-width: 1000px) {
+  p {
+    width: 431px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+}
+
 /*-----------------HEADER-------------------------------*/
 .page-header {
   display: grid;
@@ -308,41 +346,6 @@ h6 {
   .practice {
     width: min(1050px, 100%);
     margin: 0 auto;
-  }
-}
-.practice h2 {
-  margin-bottom: 10px;
-  font-family: "Martel";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 50px;
-  letter-spacing: 0.2px;
-  color: #252b42;
-}
-@media screen and (min-width: 1000px) {
-  .practice h2 {
-    width: 374px;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-}
-.practice p {
-  margin-bottom: 75px;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.2px;
-  color: #737373;
-}
-@media screen and (min-width: 1000px) {
-  .practice p {
-    width: 431px;
-    padding: 0;
-    margin: 0 auto;
-    margin-bottom: 80px;
   }
 }
 
